@@ -6,7 +6,18 @@
     <description>Recent content in Projects on Zohir Hamid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://zohirhamid.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://zohirhamid.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JustDo</title>
+      <link>https://zohirhamid.github.io/projects/justdo/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://zohirhamid.github.io/projects/justdo/</guid>
+      <description>A minimal, elegant todo app for people who want to organize tasks without the clutter.
+What it does JustDo lets you quickly add tasks, tag them by category (job hunting, leetcode, backend, etc.), and drag-and-drop to prioritize. Filter by tags, toggle dark/light mode, and stay focused on what matters.
+Tech stack Django REST Framework with JWT authentication on the backend. React with Vite on the frontend. SQLite for dev, PostgreSQL-ready for production.</description>
+    </item>
+    
     <item>
       <title>TRACKED</title>
       <link>https://zohirhamid.github.io/projects/tracked/</link>
