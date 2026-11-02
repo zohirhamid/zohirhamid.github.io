@@ -1,128 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Selected software projects by Zohir Hamid.">
+  <title>Projects — Zohir Hamid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="header-left">
-                <h1>Zohir Hamid</h1>
-                <h2>Software Engineer based in<br>London, UK</h2>
-            </div>
-            <div class="header-right">
-                <img src="/img/profile.jpg" alt="Zohir Hamid">
-            </div>
-        </div>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="site-name" href="/">Zohir Hamid</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/projects/" aria-current="page">Projects</a>
+        <a href="/blog/">Writing</a>
+        <a href="/#about">About</a>
+      </nav>
     </header>
 
-    <nav>
-        
-            <a href="/" >Home</a>
-        
-            <a href="/projects/" class="active">Projects</a>
-        
-            <a href="/blog/" >Blog</a>
-        
-            <a href="https://github.com/zohirhamid" >GitHub</a>
-        
-            <a href="https://www.linkedin.com/in/zohirhamid/" >LinkedIn</a>
-        
-            <a href="https://twitter.com/zohirhamid" >Twitter</a>
-        
-    </nav>
-
     <main>
-        
-<section class="projects-page">
-    
-        <div class="project-card">
-            <div class="project-image">
-                <img src="/img/justdo.png" alt="JustDo">
-            </div>
-            <div class="project-content">
-                <h3>JustDo</h3>
-                <p class="project-desc">A minimal, elegant todo app with drag-and-drop reordering and tag-based organization. Features dark/light mode, JWT authentication, and a clean monospace aesthetic.</p>
-                <div class="project-tech">
-                    
-                        <span>Django</span>
-                    
-                        <span>Django REST Framework</span>
-                    
-                        <span>React</span>
-                    
-                        <span>Vite</span>
-                    
-                        <span>JWT</span>
-                    
-                </div>
-                <div class="project-links">
-                    
-                    <a href="https://github.com/zohirhamid/justdo" target="_blank">Source Code ↗</a>
-                </div>
-            </div>
-        </div>
-    
-        <div class="project-card">
-            <div class="project-image">
-                <img src="/img/tracked.png" alt="TRACKED">
-            </div>
-            <div class="project-content">
-                <h3>TRACKED</h3>
-                <p class="project-desc">A minimalist habit tracking app with an Excel-like grid interface. Built for professionals who value speed and clarity over gamification. Features custom trackers, multiple data types, weekly summaries, and Stripe-powered subscriptions.</p>
-                <div class="project-tech">
-                    
-                        <span>Django</span>
-                    
-                        <span>PostgreSQL</span>
-                    
-                        <span>Stripe</span>
-                    
-                        <span>Railway</span>
-                    
-                </div>
-                <div class="project-links">
-                    <a href="https://tracked.app" target="_blank">View Live ↗</a>
-                    <a href="https://github.com/zohirhamid/tracked" target="_blank">Source Code ↗</a>
-                </div>
-            </div>
-        </div>
-    
-        <div class="project-card">
-            <div class="project-image">
-                <img src="/img/reviewbud.png" alt="ReviewBud">
-            </div>
-            <div class="project-content">
-                <h3>ReviewBud</h3>
-                <p class="project-desc">Streamline your business reviews with AI-powered review generation and QR code magic. Helps business owners create QR codes that customers scan to leave AI-generated Google reviews.</p>
-                <div class="project-tech">
-                    
-                        <span>Django</span>
-                    
-                        <span>OpenAI</span>
-                    
-                        <span>Google APIs</span>
-                    
-                        <span>Railway</span>
-                    
-                </div>
-                <div class="project-links">
-                    <a href="https://reviewbud.co" target="_blank">View Live ↗</a>
-                    <a href="https://github.com/zohirhamid/reviewbud" target="_blank">Source Code ↗</a>
-                </div>
-            </div>
-        </div>
-    
-</section>
+      <div class="page-heading">
+        <h1>Projects</h1>
+        <p class="page-intro">Products and experiments built around useful problems, thoughtful interfaces, and dependable backend systems.</p>
+      </div>
 
+      <section aria-labelledby="selected-projects">
+        <h2 class="section-label" id="selected-projects">Selected work</h2>
+        <a class="row" href="/projects/justdo/">
+          <div class="row-top">
+            <h3><span class="row-title">JustDo</span></h3>
+            <span class="row-meta">2026</span>
+          </div>
+          <p>A minimal task manager with drag-and-drop ordering, tags, themes, and secure authentication.</p>
+          <div class="row-stack">Django REST Framework, React, Vite, JWT</div>
+        </a>
+        <a class="row" href="/projects/tracked/">
+          <div class="row-top">
+            <h3><span class="row-title">TRACKED</span></h3>
+            <span class="row-meta">2025</span>
+          </div>
+          <p>A fast, spreadsheet-like habit tracker with custom data types, weekly summaries, and subscriptions.</p>
+          <div class="row-stack">Django, PostgreSQL, Stripe, Railway</div>
+        </a>
+        <a class="row" href="/projects/reviewbud/">
+          <div class="row-top">
+            <h3><span class="row-title">ReviewBud</span></h3>
+            <span class="row-meta">2025</span>
+          </div>
+          <p>An AI-assisted review tool that turns QR scans into thoughtful Google reviews.</p>
+          <div class="row-stack">Django, OpenAI, Google APIs, Railway</div>
+        </a>
+      </section>
     </main>
 
-    <footer>
-        <p><span class="heart">♥</span> 2026</p>
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="https://github.com/zohirhamid" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/zohirhamid/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://twitter.com/zohirhamid" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </div>
+      <small>Built simply, with no trackers. © 2026 Zohir Hamid.</small>
     </footer>
+  </div>
 </body>
 </html>

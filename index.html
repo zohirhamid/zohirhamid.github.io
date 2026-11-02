@@ -1,62 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.92.2" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zohir Hamid</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Zohir Hamid is a software engineer in London focused on Python, backend development, data, and system design.">
+  <title>Zohir Hamid — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="header-left">
-                <h1>Zohir Hamid</h1>
-                <h2>Software Engineer based in<br>London, UK</h2>
-            </div>
-            <div class="header-right">
-                <img src="/img/profile.jpg" alt="Zohir Hamid">
-            </div>
-        </div>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="site-name" href="/" aria-current="page">Zohir Hamid</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#about">About</a>
+      </nav>
     </header>
 
-    <nav>
-        
-            <a href="/" class="active">Home</a>
-        
-            <a href="/projects/" >Projects</a>
-        
-            <a href="/blog/" >Blog</a>
-        
-            <a href="https://github.com/zohirhamid" >GitHub</a>
-        
-            <a href="https://www.linkedin.com/in/zohirhamid/" >LinkedIn</a>
-        
-            <a href="https://twitter.com/zohirhamid" >Twitter</a>
-        
-    </nav>
-
     <main>
-        
-<section>
-    <p>Hi! I'm Zohir,</p>
-    <p>I enjoy breaking problems down to first principles, questioning assumptions, and building systems that are simple, reliable, and scalable. My background sits at the intersection of software engineering and data, with a strong focus on Python, backend development, and system design.</p>
-    <p>Outside of code, I’m into endurance sports — running and cycling — which pretty much mirrors how I approach engineering: patience, consistency, and long-term thinking.</p>
-    <p>Let's Connect <a href="https://www.linkedin.com/in/zohirhamid/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-</section>
+      <div class="intro">
+        <h1>Hi, I'm Zohir. I break problems down to first principles, <em>then build systems that last.</em></h1>
+        <p class="lede">I'm a software engineer in London working at the intersection of software and data, with a focus on <span class="highlight">Python, backend development, and system design</span>.</p>
+        <ul class="lately" aria-label="At a glance">
+          <li><b>Building</b><span>simple, reliable, scalable systems</span></li>
+          <li><b>Exploring</b><span>backend engineering and data</span></li>
+          <li><b>Outside</b><span>running and cycling around London</span></li>
+        </ul>
+      </div>
 
-<section>
-    <h2>Recent Posts</h2>
-    
-        <p><a href="https://zohirhamid.github.io/blog/blogpost1/"></a></p>
-    
-</section>
+      <section class="content-section" id="projects">
+        <h2 class="section-label">Projects</h2>
+        <a class="row" href="/projects/justdo/">
+          <div class="row-top">
+            <h3><span class="row-title">JustDo</span></h3>
+            <span class="row-meta">2026</span>
+          </div>
+          <p>A minimal task manager with drag-and-drop ordering, tags, themes, and secure authentication.</p>
+          <div class="row-stack">Django REST Framework, React, Vite, JWT</div>
+        </a>
+        <a class="row" href="/projects/tracked/">
+          <div class="row-top">
+            <h3><span class="row-title">TRACKED</span></h3>
+            <span class="row-meta">2025</span>
+          </div>
+          <p>A fast, spreadsheet-like habit tracker with custom data types, summaries, and subscriptions.</p>
+          <div class="row-stack">Django, PostgreSQL, Stripe, Railway</div>
+        </a>
+        <a class="row" href="/projects/reviewbud/">
+          <div class="row-top">
+            <h3><span class="row-title">ReviewBud</span></h3>
+            <span class="row-meta">2025</span>
+          </div>
+          <p>An AI-assisted review tool that turns QR scans into thoughtful Google reviews.</p>
+          <div class="row-stack">Django, OpenAI, Google APIs, Railway</div>
+        </a>
+      </section>
 
+      <section class="content-section" id="writing">
+        <h2 class="section-label">Writing</h2>
+        <a class="row" href="/blog/">
+          <div class="row-top">
+            <h3><span class="row-title">Notes on software, systems, and the work in between</span></h3>
+            <span class="row-meta">Ongoing</span>
+          </div>
+          <p>Working notes from building products and thinking through engineering problems.</p>
+        </a>
+      </section>
+
+      <section class="content-section about-copy" id="about">
+        <h2 class="section-label">About</h2>
+        <p>I enjoy breaking problems down to first principles, questioning assumptions, and building systems that are simple, reliable, and scalable. My background sits at the intersection of software engineering and data.</p>
+        <p>Outside of code, I'm into endurance sports—running and cycling—which mirrors how I approach engineering: patience, consistency, and long-term thinking.</p>
+      </section>
     </main>
 
-    <footer>
-        <p><span class="heart">♥</span> 2026</p>
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="https://github.com/zohirhamid" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/zohirhamid/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://twitter.com/zohirhamid" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </div>
+      <small>Built simply, with no trackers. © 2026 Zohir Hamid.</small>
     </footer>
+  </div>
 </body>
 </html>

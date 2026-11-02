@@ -1,81 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRACKED</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="TRACKED, a minimalist habit tracking app by Zohir Hamid.">
+  <title>TRACKED — Zohir Hamid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="header-left">
-                <h1>Zohir Hamid</h1>
-                <h2>Software Engineer based in<br>London, UK</h2>
-            </div>
-            <div class="header-right">
-                <img src="/img/profile.jpg" alt="Zohir Hamid">
-            </div>
-        </div>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="site-name" href="/">Zohir Hamid</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/projects/" aria-current="page">Projects</a>
+        <a href="/blog/">Writing</a>
+        <a href="/#about">About</a>
+      </nav>
     </header>
-
-    <nav>
-        
-            <a href="/" >Home</a>
-        
-            <a href="/projects/" >Projects</a>
-        
-            <a href="/blog/" >Blog</a>
-        
-            <a href="https://github.com/zohirhamid" >GitHub</a>
-        
-            <a href="https://www.linkedin.com/in/zohirhamid/" >LinkedIn</a>
-        
-            <a href="https://twitter.com/zohirhamid" >Twitter</a>
-        
-    </nav>
 
     <main>
-        
-<article class="post">
-    <header class="post-header">
-        <a href="/blog/" class="back-link">← Back to blog</a>
-        <h1>TRACKED</h1>
-        <div class="post-meta">
-            <time>January 15, 2025</time>
-            <span class="separator">·</span>
-            <span>0 min read</span>
-        </div>
-    </header>
-    
-    <div class="post-body">
-        
-    </div>
+      <article>
+        <header class="article-header">
+          <a class="back-link" href="/projects/">← Back to projects</a>
+          <p class="eyebrow">Project · 2025</p>
+          <h1>TRACKED</h1>
+          <div class="article-meta">Django · PostgreSQL · Stripe · Railway</div>
+        </header>
 
-    <footer class="post-footer">
-        <div class="post-nav">
-            
-                <a href="https://zohirhamid.github.io/projects/reviewbud/" class="post-nav-link prev">
-                    <span class="post-nav-label">← Previous</span>
-                    <span class="post-nav-title">ReviewBud</span>
-                </a>
-            
-            
-            
-                <a href="https://zohirhamid.github.io/projects/justdo/" class="post-nav-link next">
-                    <span class="post-nav-label">Next →</span>
-                    <span class="post-nav-title">JustDo</span>
-                </a>
-            
-        </div>
-    </footer>
-</article>
+        <figure class="project-figure">
+          <img src="/img/tracked.png" alt="The TRACKED habit tracking interface" width="1759" height="961">
+        </figure>
 
+        <div class="article-body">
+          <p>A minimalist habit tracker for professionals who value speed and clarity over gamification.</p>
+          <h2>What it does</h2>
+          <p>TRACKED uses an Excel-like grid for fast daily logging. It supports custom trackers, multiple data types, and weekly summaries, with Stripe-powered subscriptions.</p>
+          <h2>Tech stack</h2>
+          <p>The application is built with Django and PostgreSQL, uses Stripe for billing, and is hosted on Railway.</p>
+          <h2>Links</h2>
+          <p><a href="https://tracked.app" target="_blank" rel="noopener noreferrer">View live ↗</a> · <a href="https://github.com/zohirhamid/tracked" target="_blank" rel="noopener noreferrer">View source ↗</a></p>
+        </div>
+
+        <nav class="article-nav" aria-label="Project navigation">
+          <a href="/projects/reviewbud/"><span class="nav-label">← Previous</span><span class="nav-title">ReviewBud</span></a>
+          <a href="/projects/justdo/"><span class="nav-label">Next →</span><span class="nav-title">JustDo</span></a>
+        </nav>
+      </article>
     </main>
 
-    <footer>
-        <p><span class="heart">♥</span> 2026</p>
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="https://github.com/zohirhamid" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/zohirhamid/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <small>Built simply, with no trackers. © 2026 Zohir Hamid.</small>
     </footer>
+  </div>
 </body>
 </html>

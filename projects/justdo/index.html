@@ -1,85 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JustDo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="JustDo, a minimal task manager by Zohir Hamid.">
+  <title>JustDo — Zohir Hamid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="header-left">
-                <h1>Zohir Hamid</h1>
-                <h2>Software Engineer based in<br>London, UK</h2>
-            </div>
-            <div class="header-right">
-                <img src="/img/profile.jpg" alt="Zohir Hamid">
-            </div>
-        </div>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="site-name" href="/">Zohir Hamid</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/projects/" aria-current="page">Projects</a>
+        <a href="/blog/">Writing</a>
+        <a href="/#about">About</a>
+      </nav>
     </header>
-
-    <nav>
-        
-            <a href="/" >Home</a>
-        
-            <a href="/projects/" >Projects</a>
-        
-            <a href="/blog/" >Blog</a>
-        
-            <a href="https://github.com/zohirhamid" >GitHub</a>
-        
-            <a href="https://www.linkedin.com/in/zohirhamid/" >LinkedIn</a>
-        
-            <a href="https://twitter.com/zohirhamid" >Twitter</a>
-        
-    </nav>
 
     <main>
-        
-<article class="post">
-    <header class="post-header">
-        <a href="/blog/" class="back-link">← Back to blog</a>
-        <h1>JustDo</h1>
-        <div class="post-meta">
-            <time>February 2, 2026</time>
-            <span class="separator">·</span>
-            <span>1 min read</span>
+      <article>
+        <header class="article-header">
+          <a class="back-link" href="/projects/">← Back to projects</a>
+          <p class="eyebrow">Project · 2026</p>
+          <h1>JustDo</h1>
+          <div class="article-meta">Django REST Framework · React · Vite · JWT</div>
+        </header>
+
+        <figure class="project-figure">
+          <img src="/img/justdo.png" alt="The JustDo task management interface" width="1442" height="903">
+        </figure>
+
+        <div class="article-body">
+          <p>A minimal, elegant todo app for people who want to organise tasks without the clutter.</p>
+          <h2>What it does</h2>
+          <p>JustDo lets you quickly add tasks, tag them by category, and drag and drop them into priority order. You can filter by tags, switch between dark and light modes, and stay focused on what matters.</p>
+          <h2>Tech stack</h2>
+          <p>The backend uses Django REST Framework with JWT authentication. The frontend is built with React and Vite, with SQLite for development and support for PostgreSQL in production.</p>
+          <h2>Links</h2>
+          <p><a href="https://github.com/zohirhamid/justdo" target="_blank" rel="noopener noreferrer">View source on GitHub ↗</a></p>
         </div>
-    </header>
-    
-    <div class="post-body">
-        <p>A minimal, elegant todo app for people who want to organize tasks without the clutter.</p>
-<h2 id="what-it-does">What it does</h2>
-<p>JustDo lets you quickly add tasks, tag them by category (job hunting, leetcode, backend, etc.), and drag-and-drop to prioritize. Filter by tags, toggle dark/light mode, and stay focused on what matters.</p>
-<h2 id="tech-stack">Tech stack</h2>
-<p>Django REST Framework with JWT authentication on the backend. React with Vite on the frontend. SQLite for dev, PostgreSQL-ready for production.</p>
-<h2 id="links">Links</h2>
-<p><a href="https://github.com/zohirhamid/justdo">GitHub</a></p>
 
-    </div>
-
-    <footer class="post-footer">
-        <div class="post-nav">
-            
-                <a href="https://zohirhamid.github.io/projects/tracked/" class="post-nav-link prev">
-                    <span class="post-nav-label">← Previous</span>
-                    <span class="post-nav-title">TRACKED</span>
-                </a>
-            
-            
-            
-                <div class="post-nav-link empty"></div>
-            
-        </div>
-    </footer>
-</article>
-
+        <nav class="article-nav" aria-label="Project navigation">
+          <a href="/projects/tracked/"><span class="nav-label">← Previous</span><span class="nav-title">TRACKED</span></a>
+          <span></span>
+        </nav>
+      </article>
     </main>
 
-    <footer>
-        <p><span class="heart">♥</span> 2026</p>
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="https://github.com/zohirhamid" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/zohirhamid/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <small>Built simply, with no trackers. © 2026 Zohir Hamid.</small>
     </footer>
+  </div>
 </body>
 </html>

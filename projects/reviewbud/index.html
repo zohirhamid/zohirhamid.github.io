@@ -1,85 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReviewBud</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="ReviewBud, an AI-assisted Google review tool by Zohir Hamid.">
+  <title>ReviewBud — Zohir Hamid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="header-left">
-                <h1>Zohir Hamid</h1>
-                <h2>Software Engineer based in<br>London, UK</h2>
-            </div>
-            <div class="header-right">
-                <img src="/img/profile.jpg" alt="Zohir Hamid">
-            </div>
-        </div>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="site-name" href="/">Zohir Hamid</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/projects/" aria-current="page">Projects</a>
+        <a href="/blog/">Writing</a>
+        <a href="/#about">About</a>
+      </nav>
     </header>
-
-    <nav>
-        
-            <a href="/" >Home</a>
-        
-            <a href="/projects/" >Projects</a>
-        
-            <a href="/blog/" >Blog</a>
-        
-            <a href="https://github.com/zohirhamid" >GitHub</a>
-        
-            <a href="https://www.linkedin.com/in/zohirhamid/" >LinkedIn</a>
-        
-            <a href="https://twitter.com/zohirhamid" >Twitter</a>
-        
-    </nav>
 
     <main>
-        
-<article class="post">
-    <header class="post-header">
-        <a href="/blog/" class="back-link">← Back to blog</a>
-        <h1>ReviewBud</h1>
-        <div class="post-meta">
-            <time>January 10, 2025</time>
-            <span class="separator">·</span>
-            <span>1 min read</span>
+      <article>
+        <header class="article-header">
+          <a class="back-link" href="/projects/">← Back to projects</a>
+          <p class="eyebrow">Project · 2025</p>
+          <h1>ReviewBud</h1>
+          <div class="article-meta">Django · OpenAI · Google APIs · Railway</div>
+        </header>
+
+        <figure class="project-figure">
+          <img src="/img/reviewbud.png" alt="The ReviewBud review generation interface" width="1288" height="790">
+        </figure>
+
+        <div class="article-body">
+          <p>ReviewBud streamlines business reviews with AI-assisted writing and simple QR codes.</p>
+          <h2>What it does</h2>
+          <p>Business owners create QR codes for customers to scan. ReviewBud then helps those customers put together a thoughtful Google review without starting from a blank page.</p>
+          <h2>Tech stack</h2>
+          <p>The product uses Django, Google OAuth, the OpenAI API, and the Google Places API. The frontend is HTML, CSS, and vanilla JavaScript, hosted on Railway.</p>
+          <h2>Links</h2>
+          <p><a href="https://reviewbud.co" target="_blank" rel="noopener noreferrer">View live ↗</a> · <a href="https://github.com/zohirhamid/reviewbud" target="_blank" rel="noopener noreferrer">View source ↗</a></p>
         </div>
-    </header>
-    
-    <div class="post-body">
-        <p>Streamline your business reviews with AI-powered review generation and QR code magic.</p>
-<h2 id="what-it-does">What it does</h2>
-<p>ReviewBud helps business owners create QR codes that customers can scan to leave AI-generated Google reviews. No more struggling to get customers to write reviews.</p>
-<h2 id="tech-stack">Tech stack</h2>
-<p>Django, Google OAuth, OpenAI API, Google Places API. Frontend is HTML/CSS with vanilla JavaScript. Hosted on Railway.</p>
-<h2 id="links">Links</h2>
-<p><a href="https://reviewbud.co">Live Demo</a> · <a href="https://github.com/zohirhamid/reviewbud">GitHub</a></p>
 
-    </div>
-
-    <footer class="post-footer">
-        <div class="post-nav">
-            
-                <div class="post-nav-link empty"></div>
-            
-            
-            
-                <a href="https://zohirhamid.github.io/projects/tracked/" class="post-nav-link next">
-                    <span class="post-nav-label">Next →</span>
-                    <span class="post-nav-title">TRACKED</span>
-                </a>
-            
-        </div>
-    </footer>
-</article>
-
+        <nav class="article-nav" aria-label="Project navigation">
+          <span></span>
+          <a href="/projects/tracked/"><span class="nav-label">Next →</span><span class="nav-title">TRACKED</span></a>
+        </nav>
+      </article>
     </main>
 
-    <footer>
-        <p><span class="heart">♥</span> 2026</p>
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="https://github.com/zohirhamid" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/zohirhamid/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <small>Built simply, with no trackers. © 2026 Zohir Hamid.</small>
     </footer>
+  </div>
 </body>
 </html>
